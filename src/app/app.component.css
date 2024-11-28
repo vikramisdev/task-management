@@ -1,0 +1,147 @@
+/* General container styling */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Header styling */
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  form label {
+    font-weight: bold;
+    color: #555;
+  }
+
+  form input,
+  form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  form textarea {
+    resize: none;
+    height: 80px;
+  }
+
+  form button {
+    align-self: flex-start;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  form button:hover {
+    background: #0056b3;
+  }
+
+  /* Task list styling */
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+
+  .task {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .task h3 {
+    color: #333;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .task p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .task small {
+    color: green;
+    font-weight: bold;
+  }
+
+  /* Task buttons */
+  .task button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .task button:hover {
+    background: #218838;
+  }
+
+  .task button:nth-child(2) {
+    background: #dc3545;
+  }
+
+  .task button:nth-child(2):hover {
+    background: #c82333;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    form button {
+      width: 100%;
+      text-align: center;
+    }
+
+    .task {
+      padding: 10px;
+    }
+
+    .task h3 {
+      font-size: 16px;
+    }
+
+    .task p {
+      font-size: 12px;
+    }
+  }
