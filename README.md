@@ -1,4 +1,4 @@
-# Frontend
+# Task Management
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
 
@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Steps to run the project
+
+1. Locate and Run the express.js server by `cd backend` & `node index.js` which will run a server on `https://localhost:3000/`
+2. Now come back to the root folder and install angular dependencies by `npm install` & run the angular frontend by `ng serve` which will run on localhost but with port 4200 `https://localhost:4200/`, you will find your tasks management ui here.
